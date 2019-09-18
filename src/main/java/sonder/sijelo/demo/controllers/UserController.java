@@ -39,4 +39,14 @@ public class UserController {
             return ResponseEntity.status(500).build();
         }
     }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test() {
+        return "test";
+    }
+
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+    public String admin() {
+        return "admin";
+    }
 }
